@@ -1,0 +1,50 @@
+## Instrucciones
+---
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+	* Variables
+        + Son la manera de guardar valores a los que se puede acceder después, a través del nombre de dicha variable.
+        + Se les pueden asignar valores, y estas variables se pueden utilizar para realizar distintas operaciones.
+        + La manera más común de declarar una variable es escribiéndola de la siguiente manera:
+            var NombreDeLaVariable = 'ValorQueGuarda';
+
+	* Strings
+        + Es un tipo de dato utilizado en JavaScript, el cual consiste en una cadena de caracteres delimitados entre comillas ('simples' o "dobles").
+        + Los strings guardan datos que son representados en forma de texto, y sirven para realizar diversas operaciones como concatenaciones:
+            ej: var nombre = 'Armando';
+                var apellido = 'Cuadrado';
+                console.log(nombre + ' ' + apellido); => forma en la que se invoca la operación en consola
+                Armando Cuadrado => Dato tipo string que resulta de sumar la variable nombre, con un espacio intermedio (' ') y la variable apellido.
+
+	* Funciones (argumentos, `return`)
+        + Las funciones son un tipo de objetos invocables, que agrupa código, lo guarda y después lo ejecuta.
+        + Al tener variables, las funciones luego las calcula, las cambia o permite realizar operaciones con ellas.
+
+        Argumentos: Son variables que se pueden agregar a las funciones cuando se declaran. Van dentro de los paréntesis:
+            +Para escribir una función con argumento(s) se hace de la siguiente manera:
+                function NombreDeLaFuncion(argumento1, argumento2) {
+                    //Código que se ejecutará;
+                } 
+        Return: Es la manera en que se pueden obtener los datos fuera de la función. Nos retorna la información solicitada y termina la ejecución de la función para devolverse.
+
+        Ejemplo con función, argumentos y return:
+            function suma(a, b) {       ==> function declara la función, suma es el nombre de la función, (a, b) son los argumentos
+                return a + b;           ==> {lo que está entre llaves, es el código que se ejecutará: en este caso return suma el argumento a y el argumeto b y nos retorna o devuelve el resultado al invocar la función}
+            }
+            suma(3, 6)                  ==> se invoca la función a través del nombre suma y en los paréntesis se les da valor a los argumentos
+            9                           ==> resultado que nos devuelve 'return' cuando suma los dos valores que le dimos a los argumentos
+
+	* Declaraciones `if`
+        + If es una estructura de control que sirve para tomar decisiones. Va acompañado de una condición, que al ser verdadera, permite que se ejecute el código.
+         Si la condición no se cumple, pasará a la ejecución de otra línea de código.
+            ej: function verVideosCelular(bateria) {
+                if (bateria > 5) {                  ==> Si la condición se cumple (batería mayor a 5):
+                    return 'Puede ver videos';      ==> ejecuta 'return' y nos devuelve que si se 'puede ver videos'
+                }
+                return 'No puede ver videos';       ==> pero si esa condición no se cumple, nos retorna que 'No puede ver videos'
+            }
+
+	* Valores booleanos (`true`, `false`)
+        + Tipos de datos de JavaScript que tienen únicamente 2 valores posibles: true (verdadero) o false (falso).
+        + Este tipo de variables se usa para guardar información de tipo si o no / verdadero o falso / cumple o no cumple / existe o no existe.
+        + Se usan usualmente en operaciones condicionales como if....else, while, etc.
